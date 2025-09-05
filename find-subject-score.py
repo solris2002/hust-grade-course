@@ -4,11 +4,20 @@ import numpy as np
 import joblib, json, re
 from pathlib import Path
 
+
+
 # =========================
 # UI / Layout
 # =========================
 st.set_page_config(page_title="Dự đoán điểm môn", layout="wide")
 st.title("📘 DỰ ĐOÁN ĐIỂM SỐ HỌC PHẦN ")
+
+st.set_page_config(
+    page_title="Dự đoán điểm môn",
+    page_icon="imgs/favico.png",  # đường dẫn tới ảnh/icon
+    layout="wide"
+)
+
 
 template_path = Path("input-score.xlsx")
 st.markdown("### 📥 Tải mẫu file nhập điểm có sẵn")
