@@ -121,6 +121,17 @@ def predict_ggm_for_target(ggm, means, stds, user_numeric: dict, target: str, su
 subjects, means, stds = load_subjects_means_stds()
 ggm_art = load_ggm()
 
+st.sidebar.markdown(
+    """
+    <a href="https://solris2002.github.io/home-seee-grade/" target="_self">
+        <button style="padding:0.5em 1em; border-radius:8px; border:none;
+                       background-color:#00000; color:black; font-size:16px;">
+            << Quay lại trang chủ
+        </button>
+    </a>
+    """,
+    unsafe_allow_html=True
+)
 st.sidebar.header("1. Tải file điểm lên")
 # uploaded = st.sidebar.file_uploader("Chọn file Excel đầu vào theo mẫu input-score.xlsx", type=["xlsx", "xls"])
 uploaded = st.sidebar.file_uploader(
