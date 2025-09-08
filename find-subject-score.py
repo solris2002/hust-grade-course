@@ -50,7 +50,7 @@ LETTER_TO_GPA = {
 # =========================
 # Sidebar: Back & chọn ngành
 # =========================
-st.sidebar.markdown(
+
 st.sidebar.markdown(
     """
     <style>
