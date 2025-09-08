@@ -57,10 +57,10 @@ st.sidebar.markdown(
       .home-btn{
         display:inline-block; padding:.5em 1em; border-radius:8px;
         background:#000; color:#fff !important; text-decoration:none; font-size:16px;
-        position: relative; z-index: 9999; pointer-events: auto;
       }
     </style>
-    <a class="home-btn" href="https://solris2002.github.io/home-seee-grade/" target="_self">
+    <a class="home-btn" href="https://solris2002.github.io/home-seee-grade/"
+       target="_blank" rel="noopener noreferrer">
       &laquo; Quay lại trang chủ
     </a>
     """,
