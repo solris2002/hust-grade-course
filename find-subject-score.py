@@ -317,7 +317,7 @@ for target in target_subjects:
         results.append({
             "Môn học": target,
             "Điểm chữ": letter,
-            "Điểm số chuẩn": LETTER_TO_GPA.get(letter.split()[0], np.nan)
+            "Điểm số": LETTER_TO_GPA.get(letter.split()[0], np.nan)
         })
 
 # =========================
