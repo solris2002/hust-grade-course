@@ -311,14 +311,13 @@ results = []
 for target in target_subjects:
     pred = predict_ggm_for_target(ggm_art, means, stds, user_numeric, target, subjects)
     if not np.isfinite(pred):
-        results.append({"Môn học": target, "Điểm chữ": "Không đủ dữ liệu dự đoán", "Điểm số chuẩn": np.nan})
+        results.append({"Môn học": target, "Điểm chữ": "Không đủ dữ liệu dự đoán", "Điểm số": np.nan})
     else:
         letter = numeric_to_letter(pred)
         results.append({
             "Môn học": target,
             "Điểm chữ": letter,
-            # "Điểm số ": LETTER_TO_GPA.get(letter.split()[0], np.nan)
-            "Điểm số chuẩn": LETTER_TO_GPA.get(letter.split()[0], np.nan)
+            "Điểm số": LETTER_TO_GPA.get(letter.split()[0], np.nan)
         })
 
 # =========================
@@ -344,7 +343,7 @@ def highlight_results(row):
 styled_result = (
     df_result.style
         .hide(axis="index")
-        .format({"Điểm số chuẩn": format_score})
+        .format({"Điểm số": format_score})
         .apply(highlight_results, axis=1)
 )
 
