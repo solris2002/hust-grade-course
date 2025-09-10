@@ -351,6 +351,6 @@ st.subheader("🎯 Kết quả dự đoán")
 st.table(styled_result)
 
 st.markdown("""
-**Ghi chú:** Độ chính xác dự đoán có thể sai lệch ~0–0.5  
+**Ghi chú:** Độ chính xác dự đoán dựa trên lượng dữ liệu nghiên cứu có thể sai lệch ~0–0.5 
 *(Điểm số còn phụ thuộc nhiều vào yếu tố ngoại cảnh.)*
 """)
